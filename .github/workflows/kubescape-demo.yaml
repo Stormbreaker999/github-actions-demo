@@ -13,4 +13,4 @@ jobs:
       - name: Install Python
         run: sudo apt install python3
       - name: Running Python file
-        run: python3 a.py
+        run: python3 *.py
