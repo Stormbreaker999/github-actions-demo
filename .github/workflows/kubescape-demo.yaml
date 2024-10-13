@@ -10,7 +10,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Install Kubescape with Apt
-        run: sudo apt install kubescape
-      - name: Scan YAML Files
-        run: kubescape scan framework nsa *.yaml
+      - name: Install Python
+        run: sudo apt install python3
+      - name: Running Python file
+        run: python3 a.py
