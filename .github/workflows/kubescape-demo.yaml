@@ -10,5 +10,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Printing my name Kubescape was just getting tough
-        run: echo "Mr. Me"
+      - name: Install Kubescape with Apt
+        run: apt install kubescap
+      - name: Scan YAML Files
+        run: kubescape scan framework nsa *.yaml
